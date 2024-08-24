@@ -1,12 +1,14 @@
 @echo off
 title Windows System Administration Menu - NMINHDUCIT
 setlocal enabledelayedexpansion
+mode con: cols=65 lines=25
+color f0
 
 :menu
 cls
-echo ========================================================================
-echo              WINDOWS SYSTEM ADMINISTRATION MENU - NMINHDUCIT
-echo ========================================================================
+echo ===============================================================
+echo         WINDOWS SYSTEM ADMINISTRATION MENU - NMINHDUCIT
+echo ===============================================================
 echo 1. Display System Information
 echo 2. Clean Temporary Files
 echo 3. Check Network Connectivity
@@ -17,7 +19,7 @@ echo 7. System Event Logs
 echo 8. System Diagnostics
 echo 9. Reboot Computer
 echo 10. Exit
-echo ========================================================================
+echo ===============================================================
 set /p choice=Enter your choice (1-10): 
 
 if "%choice%"=="1" goto system_info
